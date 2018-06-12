@@ -1,28 +1,38 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Todo />
   </div>
 </template>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Todo from './components/Todo.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    Todo
   }
 }
 </script>
 
 <style>
+@import url('https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url("https://use.fontawesome.com/releases/v5.0.13/css/all.css");
+
+body {
+  background-color: #EEEEEE;
+  display: grid;
+  grid-template-rows: auto;
+  justify-items: center;
+  /* align-items: center; */
+}
+body, html {
+  margin: 0;
+  height: 100%;
+}
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+    width: 50%;
 }
 </style>
